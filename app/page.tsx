@@ -7,13 +7,24 @@ export default function Home() {
     <div className="flex h-screen max-h-screen">
       <section className="remove-scrollbar container my-auto">
         <div className="sub-container max-w-[496px]">
-          <Image
+          {/* <Image
             src="/assets/icons/logo-full.svg"
             height={1000}
             width={1000}
             alt="patient"
             className="mb-12 h-10 w-fit"
-          />
+          /> */}
+          <div className="flex gap-2">
+            <Image
+              src="/assets/icons/logo-re.png"
+              height={1000}
+              width={1000}
+              alt="patient"
+              className="mb-12 h-10 w-fit rounded-md"
+            />
+            <h3 className="font-semibold text-3xl">ReCare</h3>
+          </div>
+          
 
           <PatientForm />
 
@@ -22,7 +33,7 @@ export default function Home() {
               © 2024 ReCare
             </p>
 
-            <Link href="/?admin=true" className="text-green-500">
+            <Link href="/?admin=true" className="text-sage_green-400">
               Admin
             </Link>
           </div>

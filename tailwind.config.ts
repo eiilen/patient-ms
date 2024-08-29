@@ -21,6 +21,10 @@ const config = {
     },
     extend: {
       colors: {
+        sage_green: {
+          400: "#95a58d",
+          700: "#8C9980"
+        },
         green: {
           500: "#24AE7C",
           600: "#0D2A1F",
