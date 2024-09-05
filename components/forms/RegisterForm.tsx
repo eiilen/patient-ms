@@ -101,7 +101,7 @@ const RegisterForm = ({user}: {user: User}) => {
               fieldType={FormFieldType.PHONE_INPUT}
               control={form.control}
               name="phone"
-              label="Phone Number"
+              label="Phone number"
               placeholder="(555) 123-4567"
             />
           </div>
@@ -162,7 +162,7 @@ const RegisterForm = ({user}: {user: User}) => {
               fieldType={FormFieldType.INPUT}
               control={form.control}
               name="emergencyContactName"
-              label="Emergency Contact Name"
+              label="Emergency contact name"
               placeholder="Guardian's name"
             />
 
@@ -170,7 +170,7 @@ const RegisterForm = ({user}: {user: User}) => {
               fieldType={FormFieldType.PHONE_INPUT}
               control={form.control}
               name="emergencyContactNumber"
-              label="Emergency Contact Number"
+              label="Emergency contact number"
               placeholder="(555) 123-4567"
             />
           </div>
@@ -185,7 +185,7 @@ const RegisterForm = ({user}: {user: User}) => {
             fieldType={FormFieldType.SELECT}
             control={form.control}
             name="primaryPhysician"
-            label="Primary Care Physician"
+            label="Primary care physician"
             placeholder="Select a physician"
           >
           {Doctors.map((doctor, i) => (
@@ -209,14 +209,14 @@ const RegisterForm = ({user}: {user: User}) => {
               fieldType={FormFieldType.INPUT}
               control={form.control}
               name="insuranceProvider"
-              label="Insurance Provider"
+              label="Insurance provider"
             />
 
             <CustomFormField
               fieldType={FormFieldType.INPUT}
               control={form.control}
               name="insurancePolicyNumber"
-              label="Insurance Policy Number"
+              label="Insurance policy number"
             />
           </div>
 
@@ -233,7 +233,7 @@ const RegisterForm = ({user}: {user: User}) => {
               fieldType={FormFieldType.TEXTAREA}
               control={form.control}
               name="currentMedication"
-              label="Current Medications"
+              label="Current medications"
               placeholder="Ibuprofen 200mg, Levothyroxine 50mcg"
             />
           </div>
@@ -243,14 +243,14 @@ const RegisterForm = ({user}: {user: User}) => {
               fieldType={FormFieldType.TEXTAREA}
               control={form.control}
               name="familyMedicalHistory"
-              label=" Family Medical History"
+              label=" Family medical history"
             />
 
             <CustomFormField
               fieldType={FormFieldType.TEXTAREA}
               control={form.control}
               name="pastMedicalHistory"
-              label="Past Medical History"
+              label="Past medical history"
               placeholder="Appendectomy in 2015, Asthma diagnosis in childhood"
             />
           </div>
@@ -265,7 +265,7 @@ const RegisterForm = ({user}: {user: User}) => {
             fieldType={FormFieldType.SELECT}
             control={form.control}
             name="identificationType"
-            label="Identification Type"
+            label="Identification type"
             placeholder="Select identification type"
           >
             {IdentificationTypes.map((type, i) => (
@@ -279,7 +279,7 @@ const RegisterForm = ({user}: {user: User}) => {
             fieldType={FormFieldType.INPUT}
             control={form.control}
             name="identificationNumber"
-            label="Identification Number"
+            label="Identification number"
             placeholder="N018456789"
           />
 
@@ -287,7 +287,7 @@ const RegisterForm = ({user}: {user: User}) => {
             fieldType={FormFieldType.SKELETON}
             control={form.control}
             name="identificationDocument"
-            label="Scanned Copy of Identification Document"
+            label="Scanned copy of identification document"
             renderSkeleton={(field) => (
               <FormControl>
                 <FileUploader files={field.value} onChange={field.onChange} />
